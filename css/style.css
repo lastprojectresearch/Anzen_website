@@ -1128,15 +1128,15 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 
 .team-group { margin-bottom: 64px; }
 .team-group-title {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--text-light);
   text-transform: uppercase;
   letter-spacing: .08em;
-  margin-bottom: 28px;
-  display: flex;
-  align-items: center;
-  gap: 16px;
+  margin-bottom: 32px;
+  position: relative;
+  padding-bottom: 12px;
+  text-align: center;   
 }
 .team-group-title::after {
   content: '';
@@ -1408,11 +1408,9 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 
 /* ─── RESPONSIVE ──────────────────────────────────────────────── */
 @media (max-width: 1024px) {
-  .features-grid    { grid-template-columns: 1fr 1fr; }
-  .members-grid     { grid-template-columns: repeat(2, 1fr); }
-  .footer-top       { grid-template-columns: 1fr 1fr; }
-  .problem-stat-grid { grid-template-columns: repeat(2, 1fr); }
-  .tech-grid        { grid-template-columns: 1fr; }
+  .doc-grid    { grid-template-columns: repeat(2, minmax(260px, 1fr)); }
+  .slides-grid { grid-template-columns: repeat(2, minmax(220px, 1fr)); }
+  .team-grid   { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 768px) {
@@ -1473,8 +1471,9 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 
 .doc-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
   gap: 20px;
+  justify-content: center;
 }
 
 .doc-card {
@@ -1536,8 +1535,9 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 
 .slides-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(4, minmax(220px, 1fr));
   gap: 24px;
+  justify-content: center;
 }
 
 .slide-card {
@@ -1624,7 +1624,8 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   content: '';
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;              /* ← change from left: 0 */
+  transform: translateX(-50%);  /* ← add this */
   width: 40px;
   height: 3px;
   background: linear-gradient(90deg, var(--blue), var(--orange));
@@ -1635,11 +1636,13 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
+  justify-items: center;
 }
 
-.team-grid.supervisors {
-  grid-template-columns: repeat(2, 1fr);
-  max-width: 640px;
+.team-grid.supervisors,
+.team-section-wrap .team-group:first-child .team-grid {
+  grid-template-columns: repeat(2, minmax(260px, 300px));
+  justify-content: center;
 }
 
 .team-card {
@@ -1994,7 +1997,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   .method-step, .objective-item { flex-direction: column; gap: 12px; }
   
   /* New responsive adjustments */
-  .team-grid { grid-template-columns: 1fr; }
+ .team-grid   { grid-template-columns: repeat(2, 1fr); }
   .team-grid.supervisors { grid-template-columns: 1fr; }
   .contact-wrap { grid-template-columns: 1fr; gap: 32px; }
   .contact-form-wrap { padding: 24px; }
