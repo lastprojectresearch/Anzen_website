@@ -6,7 +6,8 @@
     <title>ANZEN | AI-Powered Vehicle Safety System</title>
     <meta name="description" content="An integrated AI-IoT platform for real-time road hazard detection, accident response, blind-spot monitoring, and predictive driver behavior analysis.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Syne:wght@700;800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
 <nav class="navbar" id="navbar">
     <div class="nav-container">
         <div class="nav-logo">
-            <img src="./assets/images/logo.png" alt="ANZEN Logo" class="logo-img">
+            
             <span class="logo-text">ANZEN</span>
         </div>
         <div class="nav-links" id="nav-links">
@@ -44,16 +45,16 @@
     </div>
     <div class="hero-content">
         <div class="hero-logo-wrap">
-            <img src="assets/images/logo.png" alt="ANZEN" class="hero-logo">
+            <img src="assets/logo.jpeg" alt="ANZEN" class="hero-logo">
         </div>
         <div class="hero-tag">
-            <i class="fas fa-shield-alt"></i> AI + IoT for Road Safety
+            <i class="fas fa-shield-alt"></i> 4 Integrated AI Systems for Road Safety
         </div>
         <h1 class="hero-title">
-            Intelligent Protection<br>for Every Journey
+            ANZEN: Intelligent Protection<br>for Every Journey
         </h1>
         <p class="hero-subtitle">
-            ANZEN is a unified AI-powered vehicle safety platform combining real-time hazard detection, accident response, multi-modal alerts, and predictive driver behavior analysis — built for Sri Lankan roads.
+            A unified AI-powered vehicle safety platform combining real-time hazard detection, accident response, blind spot monitoring, predictive driver behavior analysis — and community-validated hazard mapping — built for Sri Lankan roads.
         </p>
         <div class="hero-badges">
             <div class="badge"><i class="fas fa-car"></i> YOLOv8</div>
@@ -84,26 +85,42 @@
             <div class="feature-card">
                 <div class="feature-icon icon-blue"><i class="fas fa-exclamation-triangle"></i></div>
                 <h3>Real-Time Road Hazard Detection</h3>
-                <p>YOLOv8 Nano on Raspberry Pi for potholes, obstacles, and accidents with GPS logging and cloud sync.</p>
+                <p>Automatic detection of potholes, construction zones, and traffic police. YOLOv8 Nano on Raspberry Pi with GPS logging and cloud sync.</p>
                 <ul class="feature-list">
-                    <li><i class="fas fa-check"></i> Edge AI processing</li>
-                    <li><i class="fas fa-check"></i> MongoDB + React Native dashboard</li>
+                    <li><i class="fas fa-check"></i> Autonomous (no manual reporting)</li>
+                    <li><i class="fas fa-check"></i> Community validation layer</li>
+                    <li><i class="fas fa-check"></i> TTL-based hazard expiry</li>
                 </ul>
             </div>
             <div class="feature-card">
                 <div class="feature-icon icon-orange"><i class="fas fa-car-crash"></i></div>
-                <h3>AI-Based Accident Detection & Response</h3>
-                <p>MPU6050 + YOLOv5 + Random Forest for instant severity assessment and emergency alerts.</p>
+                <h3>AI-Based Accident Detection & Severity</h3>
+                <p>Detects crashes, classifies severity (Low/Medium/High), and counts passengers. MPU6050 + YOLOv5 + Random Forest for emergency response.</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> G-force severity classification</li>
+                    <li><i class="fas fa-check"></i> Passenger counting via vision</li>
+                    <li><i class="fas fa-check"></i> Instant emergency alerts</li>
+                </ul>
             </div>
             <div class="feature-card">
-                <div class="feature-icon icon-green"><i class="fas fa-eye"></i></div>
-                <h3>Multi-Modal Safety Alerts</h3>
-                <p>Blind spot (RCWL-0516 radar), sharp bends, traffic sign recognition using YOLOv8 and OBD-II data.</p>
+                <div class="feature-icon icon-green"><i class="fas fa-shield-alt"></i></div>
+                <h3>Multi-Modal Safety System</h3>
+                <p>Integrates blind spot radar detection, traffic sign recognition, and speed-adaptive alerts. RCWL-0516 radar + YOLOv8 + OBD-II speed gating.</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> Microwave radar blind spot detection</li>
+                    <li><i class="fas fa-check"></i> Real-time traffic sign recognition</li>
+                    <li><i class="fas fa-check"></i> Speed-adaptive voice alerts</li>
+                </ul>
             </div>
             <div class="feature-card">
-                <div class="feature-icon icon-purple"><i class="fas fa-user"></i></div>
+                <div class="feature-icon icon-purple"><i class="fas fa-user-check"></i></div>
                 <h3>Predictive Driver Behavior Analysis</h3>
-                <p>MobileNetV3 + BiLSTM for drowsiness, distraction, and risky behavior prediction with ETP algorithm.</p>
+                <p>Forecasts driver emotional state changes (Stress, Fatigue, Aggression) 30-60 seconds in advance. MobileNetV3 + BiLSTM with attention.</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> 30-60 sec prediction horizon</li>
+                    <li><i class="fas fa-check"></i> Multimodal emotion recognition</li>
+                    <li><i class="fas fa-check"></i> Proactive intervention capability</li>
+                </ul>
             </div>
         </div>
 
@@ -129,114 +146,220 @@
         </div>
 
         <div class="domain-tabs" id="domain-tabs">
-            <button class="tab-btn active" data-tab="gap">Research Gap</button>
-            <button class="tab-btn" data-tab="problem">Problem Statement</button>
-            <button class="tab-btn" data-tab="objectives">Objectives</button>
-            <button class="tab-btn" data-tab="method">Methodology</button>
-            <button class="tab-btn" data-tab="tech">Technologies</button>
+            <button class="tab-btn active" data-tab="overview">Research Overview</button>
+            <button class="tab-btn" data-tab="hazard">Hazard Detection</button>
+            <button class="tab-btn" data-tab="accident">Accident Detection</button>
+            <button class="tab-btn" data-tab="safety">Safety System</button>
+            <button class="tab-btn" data-tab="behavior">Driver Behavior</button>
         </div>
 
         <!-- Tab Panels -->
-        <div id="gap" class="tab-panel active">
-            <div class="domain-card">
-                <div class="domain-card-icon"><i class="fas fa-chart-bar"></i></div>
-                <h3>Research Gap</h3>
-                <p>Existing Intelligent Transportation Systems handle only discrete tasks. No unified platform combines automated hazard detection, real-time accident severity assessment, multi-modal alerts, and predictive driver behavior monitoring with sufficient forecast horizon.</p>
-                <div class="gap-grid">
-                    <div class="gap-item">
-                        <span class="gap-num">01</span>
-                        <p>Lack of integrated geo-fenced + radar-based blind spot detection</p>
-                    </div>
-                    <div class="gap-item">
-                        <span class="gap-num">02</span>
-                        <p>Absence of temporal multimodal predictive modeling for driver risk</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="problem" class="tab-panel">
-            <div class="domain-card">
-                <div class="domain-card-icon"><i class="fas fa-skull-crossbones"></i></div>
-                <h3>The Problem</h3>
-                <p>Road accidents remain a major public health crisis. Sri Lanka recorded over 2,500 fatal accidents in 2024–2025, causing thousands of deaths and severe injuries. Current systems are reactive, manual, and fragmented.</p>
-                <div class="problem-stat-grid">
-                    <div class="problem-stat">
-                        <span class="stat-num">2,562</span>
-                        <span class="stat-label">Fatal Accidents (2025)</span>
-                    </div>
-                    <div class="problem-stat">
-                        <span class="stat-num">2,710</span>
-                        <span class="stat-label">Deaths (2025)</span>
-                    </div>
-                    <div class="problem-stat">
-                        <span class="stat-num">1.35M</span>
-                        <span class="stat-label">Global Annual Deaths</span>
-                    </div>
-                    <div class="problem-stat">
-                        <span class="stat-num">11.5</span>
-                        <span class="stat-label">Fatalities per 100k (SL)</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="objectives" class="tab-panel">
-            <div class="domain-card">
-                <div class="domain-card-icon"><i class="fas fa-bullseye"></i></div>
-                <h3>Research Objectives</h3>
-                <div class="objectives-list">
-                    <div class="objective-item">
-                        <div class="obj-icon obj-blue"><i class="fas fa-eye"></i></div>
-                        <div class="obj-text">
-                            <h4>Develop multi-modal safety alerts</h4>
-                            <p>Integrate vision, radar, and vehicle data for proactive warnings.</p>
-                        </div>
-                    </div>
-                    <!-- Add more as needed -->
-                </div>
-            </div>
-        </div>
-
-        <div id="method" class="tab-panel">
+        <div id="overview" class="tab-panel active">
             <div class="domain-card">
                 <div class="domain-card-icon"><i class="fas fa-project-diagram"></i></div>
-                <h3>Methodology</h3>
-                <div class="method-steps">
-                    <div class="method-step">
-                        <span class="step-num">1</span>
-                        <div>
-                            <h4>Data Collection</h4>
-                            <p>Raspberry Pi + sensors + camera streams</p>
+                <h3>ANZEN: Unified AI-IoT Platform for Road Safety</h3>
+                <p>ANZEN integrates four complementary AI systems into a single vehicle-mounted edge computing platform. Rather than relying on manual reporting or reactive detection, ANZEN operates continuously to detect hazards, assess accidents, predict risks, and forecast driver behavior—all in real-time.</p>
+                <div class="overview-grid">
+                    <div class="overview-item">
+                        <h4><i class="fas fa-route"></i> Autonomous Detection</h4>
+                        <p>Automatically identifies road hazards without driver input</p>
+                    </div>
+                    <div class="overview-item">
+                        <h4><i class="fas fa-cloud-upload-alt"></i> Live Community Mapping</h4>
+                        <p>Updates shared hazard maps with geofenced validation</p>
+                    </div>
+                    <div class="overview-item">
+                        <h4><i class="fas fa-flask-vial"></i> Edge AI Processing</h4>
+                        <p>Real-time processing on Raspberry Pi (no cloud latency)</p>
+                    </div>
+                    <div class="overview-item">
+                        <h4><i class="fas fa-brain"></i> Predictive Intelligence</h4>
+                        <p>Forecasts accidents 30-60 seconds before they happen</p>
+                    </div>
+                </div>
+                <p style="margin-top: 24px; color: var(--text-light);"><strong>The Problem:</strong> Road accidents cause 1.35M deaths globally per year. Sri Lanka records over 2,500 fatal accidents annually. Current systems (Waze, Google Maps) require manual reporting, which is dangerous while driving.</p>
+            </div>
+        </div>
+
+        <div id="hazard" class="tab-panel">
+            <div class="domain-card">
+                <div class="domain-card-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                <h3>1. AI-Powered Road Hazard Detection & Real-Time Mapping</h3>
+                
+                <div class="research-subsection">
+                    <h4><i class="fas fa-book"></i> Literature Review</h4>
+                    <p>Tools like Waze and Google Maps rely on voluntary manual submissions—dangerous while driving. Prior research focused on static defects (potholes) but neglected temporary hazards like construction zones and mobile police checkpoints.</p>
+                </div>
+
+                <div class="research-subsection">
+                    <h4><i class="fas fa-search"></i> Research Gap</h4>
+                    <p>Lack of a unified, automatically operating system that combines detection, community validation, and lifecycle management (expiry logic) for transient hazards.</p>
+                </div>
+
+                <div class="research-subsection">
+                    <h4><i class="fas fa-target"></i> Objectives</h4>
+                    <ul class="objectives-ul">
+                        <li>Detect potholes, construction zones, and traffic police automatically</li>
+                        <li>Remove manual reporting burden from drivers</li>
+                        <li>Maintain up-to-date map using class-specific Time-to-Live (TTL) values</li>
+                        <li>Validate hazards through 1 km geofenced community consensus</li>
+                    </ul>
+                </div>
+
+                <div class="research-subsection">
+                    <h4><i class="fas fa-cogs"></i> Technologies</h4>
+                    <div class="tech-table">
+                        <div class="tech-row">
+                            <strong>Hardware:</strong> Raspberry Pi 4 (8GB), Pi Camera v2, NEO-M6 GPS
+                        </div>
+                        <div class="tech-row">
+                            <strong>AI Model:</strong> YOLOv8 Nano trained on Sri Lankan datasets
+                        </div>
+                        <div class="tech-row">
+                            <strong>Backend:</strong> Python FastAPI, MongoDB with TTL indexing
+                        </div>
+                        <div class="tech-row">
+                            <strong>Frontend:</strong> React Native mobile app with geofenced validation
                         </div>
                     </div>
-                    <!-- Add remaining steps -->
                 </div>
             </div>
         </div>
 
-        <div id="tech" class="tab-panel">
+        <div id="accident" class="tab-panel">
             <div class="domain-card">
-                <div class="domain-card-icon"><i class="fas fa-tools"></i></div>
-                <h3>Technologies Stack</h3>
-                <div class="tech-grid">
-                    <div class="tech-category">
-                        <h4><i class="fas fa-microchip"></i> Hardware</h4>
-                        <div class="tech-items">
-                            <div class="tech-item">Raspberry Pi 4/5</div>
-                            <div class="tech-item">MPU6050 Accelerometer</div>
-                            <div class="tech-item">RCWL-0516 Radar</div>
+                <div class="domain-card-icon"><i class="fas fa-car-crash"></i></div>
+                <h3>2. AI-Based Accident Detection & Severity Classification</h3>
+                
+                <div class="research-subsection">
+                    <h4><i class="fas fa-book"></i> Literature Review</h4>
+                    <p>Current solutions like OnStar provide location but lack severity information or passenger counts. Previous hybrid systems often excluded occupancy awareness.</p>
+                </div>
+
+                <div class="research-subsection">
+                    <h4><i class="fas fa-search"></i> Research Gap</h4>
+                    <p>No existing comprehensive alert system provides fusion of crash intensity (G-force) and real-time passenger counts for emergency responders.</p>
+                </div>
+
+                <div class="research-subsection">
+                    <h4><i class="fas fa-target"></i> Objectives</h4>
+                    <ul class="objectives-ul">
+                        <li>Detect vehicular crashes automatically in real-time</li>
+                        <li>Classify severity: Low, Medium, High (based on G-force data)</li>
+                        <li>Count passengers using computer vision</li>
+                        <li>Provide emergency services with critical occupancy and severity data</li>
+                    </ul>
+                </div>
+
+                <div class="research-subsection">
+                    <h4><i class="fas fa-cogs"></i> Technologies</h4>
+                    <div class="tech-table">
+                        <div class="tech-row">
+                            <strong>Hardware:</strong> MPU6050 Accelerometer/Gyroscope, Raspberry Pi, Camera, GPS
                         </div>
-                    </div>
-                    <div class="tech-category">
-                        <h4><i class="fas fa-brain"></i> AI Models</h4>
-                        <div class="tech-items">
-                            <div class="tech-item">YOLOv8 Nano</div>
-                            <div class="tech-item">MobileNetV3 + BiLSTM</div>
-                            <div class="tech-item">Random Forest Classifier</div>
+                        <div class="tech-row">
+                            <strong>Severity Classifier:</strong> Random Forest (G-force based)
+                        </div>
+                        <div class="tech-row">
+                            <strong>Occupancy Detection:</strong> YOLOv5 Nano (passenger counting)
+                        </div>
+                        <div class="tech-row">
+                            <strong>Backend:</strong> Python (Scikit-learn, PyTorch), FastAPI, MongoDB
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div id="safety" class="tab-panel">
+            <div class="domain-card">
+                <div class="domain-card-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>3. Multi-Modal Vehicle Safety System for Risk Prediction</h3>
+                
+                <div class="research-subsection">
+                    <h4><i class="fas fa-book"></i> Literature Review</h4>
+                    <p>Most ITS address only discrete tasks (e.g., signs OR blind spots). Many solutions fail to account for live vehicle speed when issuing alerts, leading to false alarms and driver distraction.</p>
+                </div>
+
+                <div class="research-subsection">
+                    <h4><i class="fas fa-search"></i> Research Gap</h4>
+                    <p>Lack of an integrated platform that combines geo-fenced bend warnings, radar-based blind spot monitoring, and speed-adaptive traffic sign alerts.</p>
+                </div>
+
+                <div class="research-subsection">
+                    <h4><i class="fas fa-target"></i> Objectives</h4>
+                    <ul class="objectives-ul">
+                        <li>Reduce human error in limited visibility zones (blind bends, hairpin curves)</li>
+                        <li>Provide blind spot detection using microwave radar</li>
+                        <li>Recognize traffic signs in real-time</li>
+                        <li>Issue context-specific, speed-adaptive notifications</li>
+                    </ul>
+                </div>
+
+                <div class="research-subsection">
+                    <h4><i class="fas fa-cogs"></i> Technologies</h4>
+                    <div class="tech-table">
+                        <div class="tech-row">
+                            <strong>Hardware:</strong> Raspberry Pi 4, RCWL-0516 Microwave Radar, Pi Camera, ELM327 OBD-II
+                        </div>
+                        <div class="tech-row">
+                            <strong>Vision:</strong> YOLOv8n (ONNX format) for traffic sign detection
+                        </div>
+                        <div class="tech-row">
+                            <strong>Backend:</strong> Python/Flask with OBD-II speed gating (alerts only if speed > 40 km/h)
+                        </div>
+                        <div class="tech-row">
+                            <strong>Frontend:</strong> React Native with voice alerts
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="behavior" class="tab-panel">
+            <div class="domain-card">
+                <div class="domain-card-icon"><i class="fas fa-user-check"></i></div>
+                <h3>4. AI-Based Predictive Driver Behavior Analysis</h3>
+                
+                <div class="research-subsection">
+                    <h4><i class="fas fa-book"></i> Literature Review</h4>
+                    <p>Existing systems are reactive, detecting fatigue or stress only after manifestation. Single-modality approaches struggle with accuracy and environmental noise.</p>
+                </div>
+
+                <div class="research-subsection">
+                    <h4><i class="fas fa-search"></i> Research Gap</h4>
+                    <p>Absence of temporal multimodal predictive modeling with sufficient forecast horizons (30-60 seconds) to allow meaningful proactive intervention.</p>
+                </div>
+
+                <div class="research-subsection">
+                    <h4><i class="fas fa-target"></i> Objectives</h4>
+                    <ul class="objectives-ul">
+                        <li>Forecast driver emotional state transitions (Stress, Fatigue, Aggression)</li>
+                        <li>Provide 30-60 second advance warning before emotional impairment affects driving</li>
+                        <li>Reduce accidents caused by emotional impairment (increases risk by 300%)</li>
+                        <li>Develop Emotional Transition Predictor (ETP) for long-horizon forecasts</li>
+                    </ul>
+                </div>
+
+                <div class="research-subsection">
+                    <h4><i class="fas fa-cogs"></i> Technologies</h4>
+                    <div class="tech-table">
+                        <div class="tech-row">
+                            <strong>Hardware:</strong> Raspberry Pi 4B, Intel Neural Compute Stick 2, Sony IMX219 NIR Camera, OBD-II
+                        </div>
+                        <div class="tech-row">
+                            <strong>Spatial Features:</strong> MobileNetV3 for emotion recognition
+                        </div>
+                        <div class="tech-row">
+                            <strong>Temporal Modeling:</strong> BiLSTM with multi-head attention for sequence prediction
+                        </div>
+                        <div class="tech-row">
+                            <strong>Classification:</strong> Random Forest & SVM for driving patterns + ETP for transitions
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
             </div>
         </div>
     </div>
@@ -250,8 +373,106 @@
             <h2 class="section-title">Milestones & Progress</h2>
         </div>
         <div class="timeline" id="timeline">
-            <!-- Populate dynamically via JS or static cards -->
-            <!-- Example item below; duplicate as needed -->
+            <div class="timeline-item">
+                <div class="timeline-marker marker-done"><i class="fas fa-check"></i></div>
+                <div class="timeline-card">
+                    <div class="timeline-card-header">
+                        <div class="timeline-meta">
+                            <div class="timeline-date"><i class="fas fa-calendar"></i> Q1 2024 (Jan-Mar)</div>
+                            <div class="timeline-marks marks-done">COMPLETED</div>
+                        </div>
+                        <h3>Project Initiation & Research Design</h3>
+                        <p class="timeline-brief">Literature review completed, 4 research areas defined, requirements analysis finalized.</p>
+                        <div class="milestone-marks">
+                            <span class="mark-badge mark-badge-pass">Literature Review: A</span>
+                            <span class="mark-badge mark-badge-pass">Proposal: A-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker marker-done"><i class="fas fa-check"></i></div>
+                <div class="timeline-card">
+                    <div class="timeline-card-header">
+                        <div class="timeline-meta">
+                            <div class="timeline-date"><i class="fas fa-calendar"></i> Q2 2024 (Apr-Jun)</div>
+                            <div class="timeline-marks marks-done">COMPLETED</div>
+                        </div>
+                        <h3>System Architecture & Hardware Setup</h3>
+                        <p class="timeline-brief">Hardware integration plan, software architecture designed, Raspberry Pi cluster configured.</p>
+                        <div class="milestone-marks">
+                            <span class="mark-badge mark-badge-pass">Design Document: A</span>
+                            <span class="mark-badge mark-badge-pass">Hardware Setup: A-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker marker-done"><i class="fas fa-check"></i></div>
+                <div class="timeline-card">
+                    <div class="timeline-card-header">
+                        <div class="timeline-meta">
+                            <div class="timeline-date"><i class="fas fa-calendar"></i> Q3 2024 (Jul-Sep)</div>
+                            <div class="timeline-marks marks-done">COMPLETED</div>
+                        </div>
+                        <h3>Prototype Development - Module 1 & 2</h3>
+                        <p class="timeline-brief">Hazard detection and accident detection modules implemented with initial testing.</p>
+                        <div class="milestone-marks">
+                            <span class="mark-badge mark-badge-pass">Hazard Detection: 87%</span>
+                            <span class="mark-badge mark-badge-pass">Accident Detection: 85%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker marker-active"><i class="fas fa-spinner"></i></div>
+                <div class="timeline-card">
+                    <div class="timeline-card-header">
+                        <div class="timeline-meta">
+                            <div class="timeline-date"><i class="fas fa-calendar"></i> Q4 2024 (Oct-Dec)</div>
+                            <div class="timeline-marks marks-active">IN PROGRESS</div>
+                        </div>
+                        <h3>Prototype Development - Module 3 & 4</h3>
+                        <p class="timeline-brief">Multi-modal safety system and driver behavior prediction modules in development. Integration testing ongoing.</p>
+                        <div class="milestone-marks">
+                            <span class="mark-badge mark-badge-progress">Safety System: 72%</span>
+                            <span class="mark-badge mark-badge-progress">Driver Behavior: 65%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker marker-upcoming"><i class="fas fa-circle"></i></div>
+                <div class="timeline-card">
+                    <div class="timeline-card-header">
+                        <div class="timeline-meta">
+                            <div class="timeline-date"><i class="fas fa-calendar"></i> Q1 2025 (Jan-Mar)</div>
+                            <div class="timeline-marks marks-upcoming">UPCOMING</div>
+                        </div>
+                        <h3>Integration, Testing & Evaluation</h3>
+                        <p class="timeline-brief">Full system integration, real-world field testing in Sri Lanka, performance evaluation.</p>
+                        <div class="milestone-marks">
+                            <span class="mark-badge">Target: A</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker marker-upcoming"><i class="fas fa-circle"></i></div>
+                <div class="timeline-card">
+                    <div class="timeline-card-header">
+                        <div class="timeline-meta">
+                            <div class="timeline-date"><i class="fas fa-calendar"></i> Q2 2025 (Apr-Jun)</div>
+                            <div class="timeline-marks marks-upcoming">UPCOMING</div>
+                        </div>
+                        <h3>Final Report & Project Completion</h3>
+                        <p class="timeline-brief">Comprehensive final report, documentation, presentations, and knowledge transfer.</p>
+                        <div class="milestone-marks">
+                            <span class="mark-badge">Target: A+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -264,7 +485,54 @@
             <h2 class="section-title">Project Documents</h2>
         </div>
         <div class="doc-grid">
-            <!-- Add your doc cards here with links to assets/documents/ -->
+            <a href="#" class="doc-card">
+                <div class="doc-icon"><i class="fas fa-file-pdf"></i></div>
+                <h4>Research Proposal</h4>
+                <p>Initial project proposal with objectives and scope definition</p>
+                <span class="doc-link">Download <i class="fas fa-download"></i></span>
+            </a>
+            <a href="#" class="doc-card">
+                <div class="doc-icon"><i class="fas fa-file-pdf"></i></div>
+                <h4>Literature Review</h4>
+                <p>Comprehensive review of existing ITS and road safety systems</p>
+                <span class="doc-link">Download <i class="fas fa-download"></i></span>
+            </a>
+            <a href="#" class="doc-card">
+                <div class="doc-icon"><i class="fas fa-file-pdf"></i></div>
+                <h4>System Design Document</h4>
+                <p>Architecture, hardware design, and software specifications</p>
+                <span class="doc-link">Download <i class="fas fa-download"></i></span>
+            </a>
+            <a href="#" class="doc-card">
+                <div class="doc-icon"><i class="fas fa-file-pdf"></i></div>
+                <h4>Hazard Detection Module Report</h4>
+                <p>YOLOv8 implementation, dataset, and evaluation metrics</p>
+                <span class="doc-link">Download <i class="fas fa-download"></i></span>
+            </a>
+            <a href="#" class="doc-card">
+                <div class="doc-icon"><i class="fas fa-file-pdf"></i></div>
+                <h4>Accident Detection & Severity Report</h4>
+                <p>G-force analysis, passenger counting, Random Forest results</p>
+                <span class="doc-link">Download <i class="fas fa-download"></i></span>
+            </a>
+            <a href="#" class="doc-card">
+                <div class="doc-icon"><i class="fas fa-file-pdf"></i></div>
+                <h4>Driver Behavior Prediction Report</h4>
+                <p>MobileNetV3 + BiLSTM architecture, ETP algorithm, test results</p>
+                <span class="doc-link">Download <i class="fas fa-download"></i></span>
+            </a>
+            <a href="#" class="doc-card">
+                <div class="doc-icon"><i class="fas fa-file-pdf"></i></div>
+                <h4>Field Testing Report</h4>
+                <p>Real-world evaluation in Sri Lanka, performance analysis</p>
+                <span class="doc-link">Download <i class="fas fa-download"></i></span>
+            </a>
+            <a href="#" class="doc-card">
+                <div class="doc-icon"><i class="fas fa-file-pdf"></i></div>
+                <h4>Final Report</h4>
+                <p>Comprehensive project conclusion and recommendations</p>
+                <span class="doc-link">Download <i class="fas fa-download"></i></span>
+            </a>
         </div>
     </div>
 </section>
@@ -277,7 +545,30 @@
             <h2 class="section-title">Project Slides</h2>
         </div>
         <div class="slides-grid">
-            <!-- Slide cards -->
+            <div class="slide-card">
+                <div class="slide-preview"><i class="fas fa-presentation"></i></div>
+                <h4>Project Overview</h4>
+                <p>Introduction and research motivation</p>
+                <a href="#" class="slide-btn">View Slides</a>
+            </div>
+            <div class="slide-card">
+                <div class="slide-preview"><i class="fas fa-presentation"></i></div>
+                <h4>Technical Architecture</h4>
+                <p>System design and hardware integration</p>
+                <a href="#" class="slide-btn">View Slides</a>
+            </div>
+            <div class="slide-card">
+                <div class="slide-preview"><i class="fas fa-presentation"></i></div>
+                <h4>Results & Evaluation</h4>
+                <p>Performance metrics and case studies</p>
+                <a href="#" class="slide-btn">View Slides</a>
+            </div>
+            <div class="slide-card">
+                <div class="slide-preview"><i class="fas fa-presentation"></i></div>
+                <h4>Future Work</h4>
+                <p>Roadmap and implementation plans</p>
+                <a href="#" class="slide-btn">View Slides</a>
+            </div>
         </div>
     </div>
 </section>
@@ -289,7 +580,78 @@
             <span class="section-tag">Our People</span>
             <h2 class="section-title">Meet the ANZEN Team</h2>
         </div>
-        <!-- Supervisors & Members grids using your CSS classes -->
+        <div class="team-section-wrap">
+            <div class="team-group">
+                <h3 class="team-group-title">Academic Supervisors</h3>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-avatar"><i class="fas fa-user-tie"></i></div>
+                        <h4>Prof. Dr. University Guide</h4>
+                        <p class="team-role">Project Supervisor</p>
+                        <p class="team-bio">Expert in artificial intelligence and computer vision with 12+ years in IoT research</p>
+                        <div class="team-links">
+                            <a href="mailto:supervisor@university.edu" title="Email"><i class="fas fa-envelope"></i></a>
+                            <a href="#" title="LinkedIn"><i class="fas fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar"><i class="fas fa-user-tie"></i></div>
+                        <h4>Dr. Co-Supervisor Name</h4>
+                        <p class="team-role">Co-Supervisor</p>
+                        <p class="team-bio">Specialist in embedded systems and edge computing solutions</p>
+                        <div class="team-links">
+                            <a href="mailto:cosupervisor@university.edu" title="Email"><i class="fas fa-envelope"></i></a>
+                            <a href="#" title="LinkedIn"><i class="fas fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="team-group">
+                <h3 class="team-group-title">Core Development Team</h3>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-avatar"><i class="fas fa-laptop-code"></i></div>
+                        <h4>Software Engineer</h4>
+                        <p class="team-role">Lead Developer</p>
+                        <p class="team-bio">Full-stack development, FastAPI backend, React Native frontend, system integration</p>
+                        <div class="team-links">
+                            <a href="mailto:team@anzen.com" title="Email"><i class="fas fa-envelope"></i></a>
+                            <a href="#" title="GitHub"><i class="fas fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar"><i class="fas fa-brain"></i></div>
+                        <h4>AI/ML Researcher</h4>
+                        <p class="team-role">ML Engineer</p>
+                        <p class="team-bio">YOLOv8 model training, BiLSTM architecture, emotion recognition, ETP algorithm</p>
+                        <div class="team-links">
+                            <a href="mailto:team@anzen.com" title="Email"><i class="fas fa-envelope"></i></a>
+                            <a href="#" title="GitHub"><i class="fas fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar"><i class="fas fa-microchip"></i></div>
+                        <h4>Electronics Engineer</h4>
+                        <p class="team-role">Hardware Specialist</p>
+                        <p class="team-bio">Raspberry Pi setup, sensor integration, MPU6050, radar module configuration</p>
+                        <div class="team-links">
+                            <a href="mailto:team@anzen.com" title="Email"><i class="fas fa-envelope"></i></a>
+                            <a href="#" title="GitHub"><i class="fas fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar"><i class="fas fa-palette"></i></div>
+                        <h4>UI/UX Designer</h4>
+                        <p class="team-role">Designer</p>
+                        <p class="team-bio">Mobile app design, dashboard interface, user experience optimization</p>
+                        <div class="team-links">
+                            <a href="mailto:team@anzen.com" title="Email"><i class="fas fa-envelope"></i></a>
+                            <a href="#" title="Dribbble"><i class="fas fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -297,15 +659,61 @@
 <section class="section contact-section" id="contact">
     <div class="container">
         <div class="contact-wrap">
-            <div class="contact-form-wrap">
+            <div class="contact-form-wrap reveal">
                 <h2>Get in Touch</h2>
+                <p class="contact-intro">Have questions about ANZEN or interested in collaboration? Contact us and we'll get back to you as soon as possible.</p>
                 <form class="contact-form" id="contact-form">
-                    <!-- Form fields -->
-                    <button type="submit" class="submit-btn">Send Message</button>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Full Name" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email Address" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject (e.g., Research Inquiry)" required class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message..." rows="5" required class="form-input"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
                 </form>
             </div>
-            <div class="contact-info">
-                <!-- Contact details -->
+            <div class="contact-info reveal">
+                <h3>Contact Information</h3>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-building"></i></div>
+                    <div>
+                        <h4>University</h4>
+                        <p>Computer Science & Engineering Department<br>Sri Lanka Institute of Technology</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <div>
+                        <h4>Phone Numbers</h4>
+                        <p><a href="tel:+94112123456">+94 11 2123456</a> (Main Line)<br><a href="tel:+94712345678">+94 71 2345678</a> (Mobile)</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:info@anzen-research.lk">info@anzen-research.lk</a><br><a href="mailto:contact@anzen-research.lk">contact@anzen-research.lk</a></p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Colombo, Sri Lanka<br>Central Research Laboratory</p>
+                    </div>
+                </div>
+                <div class="contact-socials">
+                    <a href="#" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
             </div>
         </div>
     </div>
@@ -313,7 +721,48 @@
 
 <!-- FOOTER -->
 <footer class="footer">
-    <!-- Footer content using your CSS -->
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>ANZEN</h3>
+                <p>AI-powered vehicle safety system for modern roads</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#domain">Research</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#documents">Documents</a></li>
+                    <li><a href="#presentations">Presentations</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Documentation</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ANZEN Research Team. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <!-- Back to top -->
