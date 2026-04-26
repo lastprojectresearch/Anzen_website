@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANZEN | AI-Powered Vehicle Safety System</title>
+    <meta name="description" content="An integrated AI-IoT platform for real-time road hazard detection, accident response, blind-spot monitoring, and predictive driver behavior analysis.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Syne:wght@700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <img src="./assets/images/logo.png" alt="ANZEN Logo" class="logo-img">
+            <span class="logo-text">ANZEN</span>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <a href="#overview" class="nav-link">Overview</a>
+            <a href="#domain" class="nav-link">Research Domain</a>
+            <a href="#milestones" class="nav-link">Milestones</a>
+            <a href="#documents" class="nav-link">Documents</a>
+            <a href="#presentations" class="nav-link">Presentations</a>
+            <a href="#team" class="nav-link">Team</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <button class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </button>
+        <a href="#contact" class="nav-cta btn btn-primary">Get Involved</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+    <div class="hero-bg">
+        <div class="hero-grid"></div>
+        <div class="hero-orb orb-1"></div>
+        <div class="hero-orb orb-2"></div>
+        <div class="hero-orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+        <div class="hero-logo-wrap">
+            <img src="assets/images/logo.png" alt="ANZEN" class="hero-logo">
+        </div>
+        <div class="hero-tag">
+            <i class="fas fa-shield-alt"></i> AI + IoT for Road Safety
+        </div>
+        <h1 class="hero-title">
+            Intelligent Protection<br>for Every Journey
+        </h1>
+        <p class="hero-subtitle">
+            ANZEN is a unified AI-powered vehicle safety platform combining real-time hazard detection, accident response, multi-modal alerts, and predictive driver behavior analysis — built for Sri Lankan roads.
+        </p>
+        <div class="hero-badges">
+            <div class="badge"><i class="fas fa-car"></i> YOLOv8</div>
+            <div class="badge"><i class="fas fa-mobile-alt"></i> Raspberry Pi</div>
+            <div class="badge"><i class="fas fa-brain"></i> BiLSTM + MobileNet</div>
+        </div>
+        <div class="hero-cta">
+            <a href="#domain" class="btn btn-primary">Explore Research</a>
+            <a href="#contact" class="btn btn-outline">Contact the Team</a>
+        </div>
+    </div>
+    <div class="hero-scroll-hint">
+        <div class="scroll-dot"></div>
+        Scroll to discover
+    </div>
+</section>
+
+<!-- OVERVIEW / FEATURES -->
+<section class="section overview" id="overview">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">What is ANZEN?</span>
+            <h2 class="section-title">Comprehensive AI Vehicle Safety Platform</h2>
+            <p class="section-desc">A single integrated system addressing the critical gaps in current road safety solutions in Sri Lanka and beyond.</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon icon-blue"><i class="fas fa-exclamation-triangle"></i></div>
+                <h3>Real-Time Road Hazard Detection</h3>
+                <p>YOLOv8 Nano on Raspberry Pi for potholes, obstacles, and accidents with GPS logging and cloud sync.</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> Edge AI processing</li>
+                    <li><i class="fas fa-check"></i> MongoDB + React Native dashboard</li>
+                </ul>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon icon-orange"><i class="fas fa-car-crash"></i></div>
+                <h3>AI-Based Accident Detection & Response</h3>
+                <p>MPU6050 + YOLOv5 + Random Forest for instant severity assessment and emergency alerts.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon icon-green"><i class="fas fa-eye"></i></div>
+                <h3>Multi-Modal Safety Alerts</h3>
+                <p>Blind spot (RCWL-0516 radar), sharp bends, traffic sign recognition using YOLOv8 and OBD-II data.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon icon-purple"><i class="fas fa-user"></i></div>
+                <h3>Predictive Driver Behavior Analysis</h3>
+                <p>MobileNetV3 + BiLSTM for drowsiness, distraction, and risky behavior prediction with ETP algorithm.</p>
+            </div>
+        </div>
+
+        <div class="tech-strip">
+            <div class="tech-strip-label">Core Technologies</div>
+            <div class="tech-tags">
+                <div class="tech-tag"><i class="fas fa-microchip"></i> Raspberry Pi</div>
+                <div class="tech-tag"><i class="fas fa-camera"></i> YOLOv8 / YOLOv5</div>
+                <div class="tech-tag"><i class="fas fa-database"></i> MongoDB</div>
+                <div class="tech-tag"><i class="fas fa-mobile"></i> React Native</div>
+                <div class="tech-tag"><i class="fas fa-waveform"></i> MPU6050 + OBD-II</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- DOMAIN / RESEARCH -->
+<section class="section domain-section" id="domain">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Our Domain</span>
+            <h2 class="section-title">Research Foundation</h2>
+        </div>
+
+        <div class="domain-tabs" id="domain-tabs">
+            <button class="tab-btn active" data-tab="gap">Research Gap</button>
+            <button class="tab-btn" data-tab="problem">Problem Statement</button>
+            <button class="tab-btn" data-tab="objectives">Objectives</button>
+            <button class="tab-btn" data-tab="method">Methodology</button>
+            <button class="tab-btn" data-tab="tech">Technologies</button>
+        </div>
+
+        <!-- Tab Panels -->
+        <div id="gap" class="tab-panel active">
+            <div class="domain-card">
+                <div class="domain-card-icon"><i class="fas fa-chart-bar"></i></div>
+                <h3>Research Gap</h3>
+                <p>Existing Intelligent Transportation Systems handle only discrete tasks. No unified platform combines automated hazard detection, real-time accident severity assessment, multi-modal alerts, and predictive driver behavior monitoring with sufficient forecast horizon.</p>
+                <div class="gap-grid">
+                    <div class="gap-item">
+                        <span class="gap-num">01</span>
+                        <p>Lack of integrated geo-fenced + radar-based blind spot detection</p>
+                    </div>
+                    <div class="gap-item">
+                        <span class="gap-num">02</span>
+                        <p>Absence of temporal multimodal predictive modeling for driver risk</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="problem" class="tab-panel">
+            <div class="domain-card">
+                <div class="domain-card-icon"><i class="fas fa-skull-crossbones"></i></div>
+                <h3>The Problem</h3>
+                <p>Road accidents remain a major public health crisis. Sri Lanka recorded over 2,500 fatal accidents in 2024–2025, causing thousands of deaths and severe injuries. Current systems are reactive, manual, and fragmented.</p>
+                <div class="problem-stat-grid">
+                    <div class="problem-stat">
+                        <span class="stat-num">2,562</span>
+                        <span class="stat-label">Fatal Accidents (2025)</span>
+                    </div>
+                    <div class="problem-stat">
+                        <span class="stat-num">2,710</span>
+                        <span class="stat-label">Deaths (2025)</span>
+                    </div>
+                    <div class="problem-stat">
+                        <span class="stat-num">1.35M</span>
+                        <span class="stat-label">Global Annual Deaths</span>
+                    </div>
+                    <div class="problem-stat">
+                        <span class="stat-num">11.5</span>
+                        <span class="stat-label">Fatalities per 100k (SL)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="objectives" class="tab-panel">
+            <div class="domain-card">
+                <div class="domain-card-icon"><i class="fas fa-bullseye"></i></div>
+                <h3>Research Objectives</h3>
+                <div class="objectives-list">
+                    <div class="objective-item">
+                        <div class="obj-icon obj-blue"><i class="fas fa-eye"></i></div>
+                        <div class="obj-text">
+                            <h4>Develop multi-modal safety alerts</h4>
+                            <p>Integrate vision, radar, and vehicle data for proactive warnings.</p>
+                        </div>
+                    </div>
+                    <!-- Add more as needed -->
+                </div>
+            </div>
+        </div>
+
+        <div id="method" class="tab-panel">
+            <div class="domain-card">
+                <div class="domain-card-icon"><i class="fas fa-project-diagram"></i></div>
+                <h3>Methodology</h3>
+                <div class="method-steps">
+                    <div class="method-step">
+                        <span class="step-num">1</span>
+                        <div>
+                            <h4>Data Collection</h4>
+                            <p>Raspberry Pi + sensors + camera streams</p>
+                        </div>
+                    </div>
+                    <!-- Add remaining steps -->
+                </div>
+            </div>
+        </div>
+
+        <div id="tech" class="tab-panel">
+            <div class="domain-card">
+                <div class="domain-card-icon"><i class="fas fa-tools"></i></div>
+                <h3>Technologies Stack</h3>
+                <div class="tech-grid">
+                    <div class="tech-category">
+                        <h4><i class="fas fa-microchip"></i> Hardware</h4>
+                        <div class="tech-items">
+                            <div class="tech-item">Raspberry Pi 4/5</div>
+                            <div class="tech-item">MPU6050 Accelerometer</div>
+                            <div class="tech-item">RCWL-0516 Radar</div>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h4><i class="fas fa-brain"></i> AI Models</h4>
+                        <div class="tech-items">
+                            <div class="tech-item">YOLOv8 Nano</div>
+                            <div class="tech-item">MobileNetV3 + BiLSTM</div>
+                            <div class="tech-item">Random Forest Classifier</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MILESTONES -->
+<section class="section milestones-section" id="milestones">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Project Timeline</span>
+            <h2 class="section-title">Milestones & Progress</h2>
+        </div>
+        <div class="timeline" id="timeline">
+            <!-- Populate dynamically via JS or static cards -->
+            <!-- Example item below; duplicate as needed -->
+        </div>
+    </div>
+</section>
+
+<!-- DOCUMENTS -->
+<section class="section documents-section" id="documents">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Deliverables</span>
+            <h2 class="section-title">Project Documents</h2>
+        </div>
+        <div class="doc-grid">
+            <!-- Add your doc cards here with links to assets/documents/ -->
+        </div>
+    </div>
+</section>
+
+<!-- PRESENTATIONS -->
+<section class="section presentations-section" id="presentations">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Presentations</span>
+            <h2 class="section-title">Project Slides</h2>
+        </div>
+        <div class="slides-grid">
+            <!-- Slide cards -->
+        </div>
+    </div>
+</section>
+
+<!-- TEAM -->
+<section class="section team-section" id="team">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Our People</span>
+            <h2 class="section-title">Meet the ANZEN Team</h2>
+        </div>
+        <!-- Supervisors & Members grids using your CSS classes -->
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact-section" id="contact">
+    <div class="container">
+        <div class="contact-wrap">
+            <div class="contact-form-wrap">
+                <h2>Get in Touch</h2>
+                <form class="contact-form" id="contact-form">
+                    <!-- Form fields -->
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <!-- Contact details -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <!-- Footer content using your CSS -->
+</footer>
+
+<!-- Back to top -->
+<button class="back-to-top" id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
